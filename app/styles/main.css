@@ -1,0 +1,198 @@
+/*GLOBAL*/
+a {
+  color: steelblue;
+}
+p {
+  font-family: 'Didot';
+}
+/*NAV BAR*/
+#topFillBlock{
+  display: block;
+}
+.nav {
+  text-align: center;
+  margin-top: 30px;
+  background-color: white;
+  margin-bottom: 30px;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+.nav > li {
+  background-color: none;
+}
+.nav > li > a:hover {
+  background-color: white;
+  border: thin solid white;
+}
+.nav > li > a {
+  border-radius: 0;
+  margin: 0;
+}
+.nav > li.active > a {
+  background-color: #B2AC57;
+  border: thin solid #B2AC57;
+}
+.navControls{
+  margin-top: 43px;
+}
+.navControls > a {
+  font-family: 'Lantinghei SC';
+  font-size: 17px;
+}
+#first {
+  margin-left: 50px  
+}
+#third {
+  margin-left: 20px
+}
+/*ABOUT ME SECTION*/
+#selfPic{
+  width: 475px;
+  height: 322px;
+  background: url('../images/self-photo-1.jpg');
+  background-size: 475px 322px;
+}
+ul.technologies{
+  list-style-type: none;
+  position: relative;
+  width: 610px;
+}
+.tech-li {
+  display: inline;
+}
+.tech-li > div{
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  background-size: 100px 100px;
+  margin: 0 auto;
+}
+#backbone{
+  background: url("../images/backbone.png") 0 0;
+  background-size: 100px 100px;
+}
+#bootstrap{
+  background: url("../images/Bootstrap_logo.svg") 0 0;
+  background-size: 100px 100px;
+}
+#d3{
+  background: url("../images/d3_logo.svg") 0 0;
+  background-size: 100px 100px;
+}
+#js{
+  background: url("../images/JavaScript-logo.png") 0 0;
+  background-size: 100px 100px;
+}
+#latex{
+  background: url("../images/LaTeX_logo.svg") 0 0;
+  background-size: 100px 100px;
+}
+#mysql{
+  background: url("../images/huge-mysql-logo.png") 0 0;
+  background-size: 100px 100px;
+}
+#pg{
+  background: url("../images/postgres.jpeg") 0 0;
+  background-size: 100px 100px;
+}
+#processing{
+  background: url("../images/Processing_Logo_Clipped.svg") 0 0;
+  background-size: 100px 100px;
+}
+#rails{
+  background: url("../images/Ruby_on_Rails_logo.svg") 0 0;
+  background-size: 100px 100px;
+}
+#ruby{
+  background: url("../images/Ruby_logo.png") 0 0;
+  background-size: 100px 100px;
+}
+
+/*PORTFOLIO SECTION*/
+#portfolio-examples{
+    list-style-type: none;
+}
+.description {
+  margin-top: 30px;
+  display: none;
+}
+.links {
+  margin-top: 25px;
+}
+h5{
+  margin: 0;
+}
+.pic-side {
+  height: 226px;
+  min-width: 108px;
+}
+
+.portfolioItem {
+  display: block;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.portfolioItem:hover{
+  border: 2px solid steelblue;
+}
+.portfolioItem.selected {
+  border: 5px solid steelblue;
+} 
+
+
+#tea-cup-pic{
+  width: 180px;
+  height: 108px;
+  background: url("../images/tea-cup.png") 0 0;
+  background-size: 180px 108px;
+}
+#zoidberg-pic{
+  width: 180px;
+  height: 109px;
+  background: url("../images/zoidberg.png") 0 0;
+  background-size: 180px 108px;
+}
+#asteroids-pic{
+  width: 180px;
+  height: 109px;
+  background: url("../images/asteroids.png") 0 0;
+  background-size: 180px 108px;
+}
+#nbody-pic{
+  width: 180px;
+  height: 109px;
+  background: url("../images/nbody.png") 0 0;
+  background-size: 180px 108px;
+}
+#no-pic{
+  width: 180px;
+  height: 109px;
+  background: url("../images/active-record.png") 0 0;
+  background-size: 180px 108px;
+}
+/*RESEARCH*/
+#researchProjectsUL{
+  list-style: none;
+}
+#researchProjectsUL li{
+  margin-bottom: 20px;
+}
+/*INTERESTS VISUALIZATION*/
+.node circle {
+  fill: #fff;
+  stroke: steelblue;
+  stroke-width: 1.5px;
+}
+.node {
+  font: 10px sans-serif;
+}
+.link {
+  fill: none;
+  stroke: #ccc;
+  stroke-width: 1.5px;
+}
+#interestsContainer{
+
+}
+
+/*VISUALIZATION SECTION*/

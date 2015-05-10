@@ -1,14 +1,15 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html lang="">
   <head>
     <meta charset="utf-8">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>mcnuttsite</title>
+    <title>personalSite</title>
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-    <!-- build:css styles/vendor.css -->
+    <!-- build:css styles/main.css -->
     <!-- bower:css -->
+    <!-- <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.css" />
     <!-- endbower -->
     <!-- endbuild -->
 
@@ -16,51 +17,210 @@
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
 
-    <!-- build:js scripts/vendor/modernizr.js -->
-    <script src="/bower_components/modernizr/modernizr.js"></script>
-    <!-- endbuild -->
   </head>
   <body>
-    <!--[if lt IE 10]>
-      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
+    <div id='topFillBlock'></div>
+    <div class='row'>
+      <div class='col-xs-10 col-xs-offset-1'>
+        <div class="nav nav-tabs" role="tablist">
+          <div class="active navControls col-xs-2" id='first'>
+            <a href="#about" aria-controls="about" role="tab" data-toggle="tab">about</a>
+          </div>
+          <div class="navControls col-xs-2">
+            <a href="#portfolio" aria-controls="portfolio" role="tab" data-toggle="tab">web portfolio</a>
+          </div>
 
-    <div class="container">
-      <div class="header">
-        <ul class="nav nav-pills pull-right">
-          <li class="active"><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
+          <a aria-controls="home" href='#home' class="col-xs-2" id='logospot'  role="tab" data-toggle="tab"></a>
+          <div class="navControls col-xs-2" id='third'>
+            <a href="#visualization" aria-controls="visualization" role="tab" data-toggle="tab">visualization</a>
+          </div>
+          <div class="navControls col-xs-2">
+            <a href="#research" aria-controls="research" role="tab" data-toggle="tab">research</a>
+          </div>
         </ul>
-        <h3 class="text-muted">mcnuttsite</h3>
-      </div>
-
-      <div class="jumbotron">
-        <h1>'Allo, 'Allo!</h1>
-        <p class="lead">Always a pleasure scaffolding your apps.</p>
-        <p><a class="btn btn-lg btn-success" href="#">Splendid!</a></p>
-      </div>
-
-      <div class="row marketing">
-        <div class="col-lg-6">
-          <h4>HTML5 Boilerplate</h4>
-          <p>HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.</p>
-
-          <h4>Sass</h4>
-          <p>Sass is the most mature, stable, and powerful professional grade CSS extension language in the world.</p>
-
-          <h4>Bootstrap</h4>
-          <p>Sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development.</p>
-          <h4>Modernizr</h4>
-          <p>Modernizr is an open-source JavaScript library that helps you build the next generation of HTML5 and CSS3-powered websites.</p>
-
-        </div>
-      </div>
-
-      <div class="footer">
-        <p>♥ from the Yeoman team</p>
       </div>
     </div>
+  <div class='row'>  
+		<div role="tabpanel" class='col-xs-8 col-xs-offset-2'>      
+      <!-- Tab panes -->      
+       <div class="tab-content">
+         <div role="tabpanel" class="tab-pane fade in active" id='home'>
+         </div>
+         
+        <div role="tabpanel" class="tab-pane fade" id="about">
+          <div class='row'>
+            <div class='col-xs-6 col-xs-offset-2'> <a href='assets/Resume.pdf'>CV</a> </div>
+            <div class='col-xs-3'> 
+              <a href='mailto:mcnutt.andrew@gmail.com'>CONTACT</a> 
+              </div>
+          </div>
+          <br>
+
+					Hi! my name is Andrew McNutt and I am a web developer in San Francisco. My background is in Physics, specifically in the field of alternative Classical Mechanics.  I am a full stack web developer, but I am more or less front-end/data-viz leaning. I feel greatly for the plight of the American desert.
+          <div class='row'>
+            <div class='col-xs-6 col-xs-offset-2'>
+              <div id='selfPic'></div>
+            </div>
+          </div>  
+  				I am familiar with a variety of technologies and techniques, including the ones pictographically listed above. I am also quite familiar with Mathematica (as well as Grid Mathematica), Matlab, Lab View, and git, among many others.  I also pretend to be good at <a href="http://mcnuttart.tumblr.com">art.</a>
+          <div class='row'>
+            <div class='col-xs-10 col-xs-offset-1'>
+    					<ul class="technologies">
+    						<li class="tech-li"><div id="aruby"></div></li>
+    						<li class="tech-li"><div id="arails"></div></li>
+    						<li class="tech-li"><div id="ajs"></div></li>
+    						<li class="tech-li"><div id="abackbone"></div></li>
+    						<li class="tech-li"><div id="abootstrap"></div></li>
+                <li class="tech-li"><div id="ad3"></div></li>
+    						<li class="tech-li"><div id="aprocessing"></div></li>
+    						<li class="tech-li"><div id="alatex"></div></li>
+    						<li class="tech-li"><div id="apg"></div></li>
+                <li class="tech-li"><div id="amysql"></div></li>
+    					</ul>
+            </div>
+          </div>  
+        </div>
+  <div role="tabpanel" class="tab-pane fade" id="portfolio">
+        I am familiar with a variety of technologies and techniques, including the ones pictographically listed above. I am also quite familiar with Mathematica (as well as Grid Mathematica), Matlab, Lab View, and git, among many others.  I also pretend to be good at <a href="http://mcnuttart.tumblr.com">art.</a>
+    
+        For a comprehensive view of my coding projects, check out my <a href="https://github.com/mcnuttandrew/">github</a>, but here are some highlights:
+        <br>
+        <br>
+        <div class='row'>
+						<div class="col-xs-4 pic-side" >
+                <div class='portfolioItem selected' id='tea-cup-pic' data='teacup' title='Teacup'></div>
+                <div class='portfolioItem' id='nbody-pic' data='nbody' title='Nbody Simulator'></div>
+            </div>
+						<div class="col-xs-4 pic-side" >
+                <div class='portfolioItem' id='zoidberg-pic' data='zoidberg' title='Why Not Ipsum'></div>
+                <div class='portfolioItem' id='no-pic' data='activeRecord' title='Slim Record'></div>
+            </div>
+            <div class="col-xs-4 pic-side" >
+                <div class='portfolioItem' id='asteroids-pic' data='asteroids' title='Asteroids'></div>
+                <div class='portfolioItem' id='no-pic' data='railsLite' title='Railsito'></div>
+            </div>
+        </div>  
+
+				<div class="row description" id='teacup'>
+          <div class='row'>
+            <div class='col-xs-1 links' >
+              <h5><a href="http://tea-cup.org">(live)</a></h5>
+              <h5><a href="https://github.com/mcnuttandrew/Project-Teacup">(source)</a></h5>
+            </div>    
+            <div class='col-xs-8 '>
+    					<h1><a href="http://tea-cup.org">Teacup</a> </h1>
+            </div>  
+          </div>
+					A microblogging platform for viewing the collective unconscious. Single page Backbone app based on RESTful practices. Features data visualizations including trending topics and user population. Seed data was generated using a variety of large scale data scrapes and data cleaning techniques. Technologies included <i>a Rails API, Backbone.js, jQuery, Nokogiri, and D3.</i>  
+				</div>	
+
+			
+				<div class="row description" id='zoidberg'>
+          <div class='row'>
+            <div class='col-xs-1 links' >
+              <h5><a href="http://why-not-ipsum.herokuapp.com">(live)</a></h5>
+              <h5><a href="https://github.com/mcnuttandrew/Why-Not-Zoidberg">(source)</a></h5>
+            </div>    
+            <div class='col-xs-8 '>
+    					<h1><a href="http://why-not-ipsum.herokuapp.com">Why Not Ipsum</a> </h1>
+            </div>  
+          </div>
+					A Lorem Ipsum generator populated by Zoidberg quotes, built following RESTful design practices. Included a large series of data scrapes, which were necessarily followed by intensive data cleaning. Technologies included <i>Rails API, Backbone.js, and Nokogiri.</i>
+				</div>
+
+				<div class="row description" id=asteroids>
+          <div class='row'>
+            <div class='col-xs-1 links' >
+              <h5><a href="assets/asteroids/asteroids">(live)</a></h5>
+              <h5><a href="https://github.com/mcnuttandrew/Asteroids">(source)</<a href="#"></a></h5>
+            </div>    
+            <div class='col-xs-8 '>
+    					<h1><a href="assets/asteroids/asteroids">Asteroids</a> </h1>
+            </div>  
+          </div>          
+					A reimaging of the classic arcade game. Technologies included <i> Javascipt, HTML5 Canvas, and jQuery </i>   
+				</div>	
+
+			
+				<div class="row description" id=nbody>
+          <div class='row'>
+            <div class='col-xs-1 links' >
+              <h5><a href="assets/nbody/nbody.html">(live)</a></h5>
+              <h5><a href="https://github.com/mcnuttandrew/N-Body-Simulator">(source)</a></h5>
+            </div>    
+            <div class='col-xs-8 '>
+    					<h1><a href="assets/nbody/nbody.html">N-Body Simulator</a> </h1>
+            </div>  
+          </div>
+					A low N gravitional interaction simulator built in processing.   
+				</div>
+
+				<div class="row description" id='activeRecord'>
+          <div class='row'>
+            <div class='col-xs-1 links' >
+              <h5><a href="https://github.com/mcnuttandrew/Active-Record-Lite">(source)</a></h5>
+            </div>    
+            <div class='col-xs-8 '>
+    					<h1>Slim Record</h1>
+            </div>  
+          </div>
+					An Object Relational Mapper that rebuilds much of the functionality of active record. The point of the project was to get a better comprehension of the underlying mechanisms that we so often take for granted in Rails.
+				</div>	
+
+			
+				<div class="row description" id=railsLite>
+          <div class='row'>
+            <div class='col-xs-1 links' >
+              <h5><a href="https://github.com/mcnuttandrew/railsito">(source)</a></h5>
+            </div>    
+            <div class='col-xs-8 '>
+    					<h1>Railsito </h1>
+            </div>  
+          </div>
+					A reconstruction of the infamous web frame work using Ruby. In just the same way as slim record, I wanted to actually understand what was going on under the hood, so I re-built the whole machine.
+				</div>
+        
+        
+    </div>
+        <div role="tabpanel" class="tab-pane fade row" id="research">
+          <div id='interestsContainer' class='col-xs-12'></div>
+          
+          These days most of the science I do is in the context of my full time job as a  web developer at Collaborative Drug Discovery. I am currently in the process of applying to graudate school. In addition to this work I have caught the UX research bug recently, and much of my personal research time is spent construction alternative tools for viewing systems. 
+          <h2> Publications</h2>
+          <ul>
+            <li><a href='http://iopscience.iop.org/0264-9381/32/6/065010'>The Schrödinger–Newton system with self-field coupling J Franklin, Y Guo, A McNutt, A Morgan - Classical and Quantum Gravity, 2015</a></li>
+          </ul>
+          <h2>Projects</h2>
+          <ul id='researchProjectsUL'>
+            <li><div class='row'>
+              <div class='col-xs-2'> <a href="assets/thesis.pdf">Nonequivalant Lagrangian Mechanics</a> </div>
+              <div class='col-xs-10'>
+                During my senior year at Reed I wrote my undergraduate thesis on an alternative representation of classical mechanics called Nonequivalent Lagrangian Mechanics. It was advised by <a href='http://www.wooster.edu/bios/nmann/'>Nelia Mann</a>.
+              </div>
+            </div></li>
+            
+            <li><div class='row'>
+              <div class='col-xs-2'> <a href="assets/nhedron.pdf">N-hedron</a> </div>
+              <div class='col-xs-10'>
+                Throughout my undergraduate career I had a prevailing interest in the geometrically ambiguous shape, the N-Hedron. It is formed by taking an integer, N, number of points, placing them on the sphere and demanding that they be maximally far apart. This culminated in a independent project, in which I implemented three different algorithms for constructing these shapes. You can find out more about this project. One of the major aspects of this project was dealing with a large (for Mathematica) amount of data which reached up into the millions of data points.
+              </div>
+            </div></li>
+            
+            <li><div class='row'>
+              <div class='col-xs-2'> <a href="assets/chaotic_circuit.pdf">Chaotic Circuit</a> </div>
+              <div class='col-xs-10'>
+                In culminating effort of my junior year at Reed I built a third order Chaotic circuit as an independent project. This project was fine, but shows some of the best data visualization work I have done, particularlly the combination phase and signal metering small multiples diagram. 
+              </div>
+            </div></li>
+          </ul>
+        </div>
+        
+        <div role="tabpanel" class="tab-pane fade" id="visualization">
+          This page will imminently host a variety of different visualizations that I've done. For now it is under construction.
+        </div>
+      </div>
+		</div>
+  </div>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
@@ -75,26 +235,31 @@
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
     <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="/bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="/bower_components/Processing.js/processing.js"></script>
+    <script src="/bower_components/d3/d3.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
-        <!-- build:js scripts/plugins.js -->
-        <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/affix.js"></script>
-        <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/alert.js"></script>
-        <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/dropdown.js"></script>
-        <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/tooltip.js"></script>
-        <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/modal.js"></script>
-        <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/transition.js"></script>
-        <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/button.js"></script>
-        <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/popover.js"></script>
-        <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/carousel.js"></script>
-        <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/scrollspy.js"></script>
-        <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/collapse.js"></script>
-        <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/tab.js"></script>
-        <!-- endbuild -->
+    <!-- build:js scripts/plugins.js -->
+    <script src="/bower_components/bootstrap/js/affix.js"></script>
+    <script src="/bower_components/bootstrap/js/alert.js"></script>
+    <script src="/bower_components/bootstrap/js/dropdown.js"></script>
+    <script src="/bower_components/bootstrap/js/tooltip.js"></script>
+    <script src="/bower_components/bootstrap/js/modal.js"></script>
+    <script src="/bower_components/bootstrap/js/transition.js"></script>
+    <script src="/bower_components/bootstrap/js/button.js"></script>
+    <script src="/bower_components/bootstrap/js/popover.js"></script>
+    <script src="/bower_components/bootstrap/js/carousel.js"></script>
+    <script src="/bower_components/bootstrap/js/scrollspy.js"></script>
+    <script src="/bower_components/bootstrap/js/collapse.js"></script>
+    <script src="/bower_components/bootstrap/js/tab.js"></script>
+    <!-- endbuild -->
 
-        <!-- build:js scripts/main.js -->
-        <script src="scripts/main.js"></script>
-        <!-- endbuild -->
+    <!-- build:js scripts/main.js -->
+    <script src="scripts/vendor.js"></script>
+    <script src="scripts/plugins.js"></script>
+    <script src="scripts/main.js"></script>
+    <!-- endbuild -->
 </body>
 </html>
