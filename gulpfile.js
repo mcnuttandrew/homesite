@@ -118,7 +118,7 @@ gulp.task('wiredep', function () {
     .pipe(gulp.dest('app'));
 });
 
-gulp.task('build', ['html', 'images', 'fonts', 'extras'], function () {
+gulp.task('build', ['html', 'images', 'fonts', 'extras', 'serveprod'], function () {
   return gulp.src('dist/**/*').pipe($.size({title: 'build', gzip: true}));
 });
 
@@ -127,8 +127,8 @@ gulp.task('default', ['clean'], function () {
 });
 
 gulp.task('serveprod', function() {
-  connect.server({
-    root: ['index.html'],
+  $.connect.server({
+    root: 'dist',
     port: process.env.PORT || 5000, // localhost:5000
     livereload: false
   });
