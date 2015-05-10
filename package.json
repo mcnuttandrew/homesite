@@ -38,7 +38,7 @@
     "wiredep": "^2.0.0"
   },
   "scripts": {
-    "start": "bower install"
+    "postinstall": "./node_modules/bower/bin/bower install"
   }
   
 }
