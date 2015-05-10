@@ -36,5 +36,9 @@
     "marked": "^0.3.2",
     "opn": "^1.0.0",
     "wiredep": "^2.0.0"
+  },
+  "scripts": {
+    "start": "bower install"
   }
+  
 }
