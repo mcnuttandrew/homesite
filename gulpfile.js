@@ -122,7 +122,8 @@ gulp.task('build', ['html', 'images', 'fonts', 'extras', 'bower-components', 'as
 });
 
 gulp.task('assets', function () {
-  // return gulp.src('dist/**/*').pipe($.size({title: 'build', gzip: true}));
+  return gulp.src(['app/assets/*.pdf', 'app/assets/**/*', 'app/assets/**/**/*'])
+  .pipe(gulp.dest('dist/assets'));
 });
 
 gulp.task('default', ['clean'], function () {
