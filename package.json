@@ -37,8 +37,9 @@
     "opn": "^1.0.0",
     "wiredep": "^2.0.0"
   },
+  "cacheDirectories": ["node_modules", "bower_components"],
   "scripts": {
-    "postinstall": "./node_modules/bower/bin/bower install"
+    "postinstall": "bower install"
   }
   
 }
