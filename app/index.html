@@ -27,7 +27,7 @@
             <a href="#about" aria-controls="about" role="tab" data-toggle="tab">about</a>
           </div>
           <div class="navControls col-xs-2">
-            <a href="#portfolio" aria-controls="portfolio" role="tab" data-toggle="tab">web portfolio</a>
+            <a href="#portfolio" aria-controls="portfolio" role="tab" data-toggle="tab">webdev</a>
           </div>
 
           <a aria-controls="home" href='#home' class="col-xs-2" id='logospot'  role="tab" data-toggle="tab"></a>
@@ -88,12 +88,12 @@
         <br>
         <div class='row'>
 						<div class="col-xs-4 pic-side" >
-                <div class='portfolioItem selected' id='tea-cup-pic' data='teacup' title='Teacup'></div>
-                <div class='portfolioItem' id='nbody-pic' data='nbody' title='Nbody Simulator'></div>
+                <div class='portfolioItem selected' id='vision-pic' data='vision' title='CDD: Vision'></div>
+                <div class='portfolioItem' id='tea-cup-pic' data='teacup' title='Teacup'></div>
             </div>
 						<div class="col-xs-4 pic-side" >
+                <div class='portfolioItem' id='self-site-pic' data='self-site' title='This Site'></div>
                 <div class='portfolioItem' id='zoidberg-pic' data='zoidberg' title='Why Not Ipsum'></div>
-                <div class='portfolioItem' id='no-pic' data='activeRecord' title='Slim Record'></div>
             </div>
             <div class="col-xs-4 pic-side" >
                 <div class='portfolioItem' id='asteroids-pic' data='asteroids' title='Asteroids'></div>
@@ -115,17 +115,16 @@
 				</div>	
 
 			
-				<div class="row description" id='zoidberg'>
+				<div class="row description" id='vision'>
           <div class='row'>
             <div class='col-xs-1 links' >
-              <h5><a href="http://why-not-ipsum.herokuapp.com">(live)</a></h5>
-              <h5><a href="https://github.com/mcnuttandrew/Why-Not-Zoidberg">(source)</a></h5>
+              <h5><a href="https://www.collaborativedrug.com/buzz/2015/05/02/cdd-vision-update-launching-vision-now/">(live)</a></h5>
             </div>    
             <div class='col-xs-8 '>
-    					<h1><a href="http://why-not-ipsum.herokuapp.com">Why Not Ipsum</a> </h1>
+    					<h1><a href="https://www.collaborativedrug.com/buzz/2015/05/02/cdd-vision-update-launching-vision-now/">CDD: Vision</a> </h1>
             </div>  
           </div>
-					A Lorem Ipsum generator populated by Zoidberg quotes, built following RESTful design practices. Included a large series of data scrapes, which were necessarily followed by intensive data cleaning. Technologies included <i>Rails API, Backbone.js, and Nokogiri.</i>
+					A data visualization platform for viewing high dimensional drug discovery data, built for and on top of the Collaborative Drug Discovery: Vault platform. I acted as the lead developer on this project, which involved guiding a four person team through the implementation of a vareity of javascript technologies. The stack included a 'backend' built on <i>Crossfilter and Immutable</i>, a 'middleware/binding level' built with <i>jQuery and d3.js</i>, and 'frontend' constructed with a blend of <i>HTML5 canvas and d3.js </i>  
 				</div>
 
 				<div class="row description" id=asteroids>
@@ -154,8 +153,35 @@
           </div>
 					A low N gravitional interaction simulator built in processing.   
 				</div>
+        
+        <div class="row description" id=self-site>
+          <div class='row'>
+            <div class='col-xs-1 links' >
+              <h5><a href="mcnutt.in">(live)</a></h5>
+              <h5><a href="https://github.com/mcnuttandrew/homesite">(source)</a></h5>
+            </div>    
+            <div class='col-xs-8 '>
+    					<h1><a href="mcnutt.in">This website</a> </h1>
+            </div>  
+          </div>
+					This website is a multifacted platform for the delivery and rendering of data visualization and other entertainments. It is a node.js server power by bowerized-gulp, and is hosted on heroku.     
+				</div>
 
-				<div class="row description" id='activeRecord'>
+				<div class="row description" id='zoidberg'>
+          <div class='row'>
+            <div class='col-xs-1 links' >
+              <h5><a href="http://why-not-ipsum.herokuapp.com">(live)</a></h5>
+              <h5><a href="https://github.com/mcnuttandrew/Why-Not-Zoidberg">(source)</a></h5>
+            </div>    
+            <div class='col-xs-8 '>
+    					<h1><a href="http://why-not-ipsum.herokuapp.com">Why Not Ipsum</a> </h1>
+            </div>  
+          </div>
+					A Lorem Ipsum generator populated by Zoidberg quotes, built following RESTful design practices. Included a large series of data scrapes, which were necessarily followed by intensive data cleaning. Technologies included <i>Rails API, Backbone.js, and Nokogiri.</i>
+				</div>	
+
+			
+				<div class="row description" id=railsLite>
           <div class='row'>
             <div class='col-xs-1 links' >
               <h5><a href="https://github.com/mcnuttandrew/Active-Record-Lite">(source)</a></h5>
@@ -165,10 +191,7 @@
             </div>  
           </div>
 					An Object Relational Mapper that rebuilds much of the functionality of active record. The point of the project was to get a better comprehension of the underlying mechanisms that we so often take for granted in Rails.
-				</div>	
 
-			
-				<div class="row description" id=railsLite>
           <div class='row'>
             <div class='col-xs-1 links' >
               <h5><a href="https://github.com/mcnuttandrew/railsito">(source)</a></h5>
@@ -177,7 +200,7 @@
     					<h1>Railsito </h1>
             </div>  
           </div>
-					A reconstruction of the infamous web frame work using Ruby. In just the same way as slim record, I wanted to actually understand what was going on under the hood, so I re-built the whole machine.
+					A reconstruction of the infamous web frame work using Ruby. In just the same way as Slim Record, I wanted to actually understand what was going on under the hood, so I re-built the whole machine.
 				</div>
         
         
