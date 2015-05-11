@@ -128,7 +128,7 @@ gulp.task('default', ['clean'], function () {
 gulp.task('bower-components', function () {
   return gulp.src(['bower_components/d3/d3.min.js', 'bower_components/jquery/dist/jquery.min.js', 'bower_components/bootstrap/dist/js/bootstrap.min.js'])
   .pipe($.concat('vendor.js'))
-  .pipe(gulp.dest('dist/app/scripts'));
+  .pipe(gulp.dest('dist/scripts'));
 });
 
 gulp.task('serveprod', function() {
