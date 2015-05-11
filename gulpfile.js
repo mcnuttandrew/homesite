@@ -117,12 +117,18 @@ gulp.task('wiredep', function () {
     .pipe(gulp.dest('app'));
 });
 
-gulp.task('build', ['html', 'images', 'fonts', 'extras'], function () {
+gulp.task('build', ['html', 'images', 'fonts', 'extras', 'bower-components'], function () {
   return gulp.src('dist/**/*').pipe($.size({title: 'build', gzip: true}));
 });
 
 gulp.task('default', ['clean'], function () {
   gulp.start('build');
+});
+
+gulp.task('bower-components', function () {
+  return gulp.src(['bower_components/d3/d3.min.js', 'bower_components/jquery/dist/jquery.min.js', 'bower_components/bootstrap/dist/js/bootstrap.min.js'])
+  .pipe($.concat('vendor.js'))
+  .pipe(gulp.dest('dist/app/scripts'));
 });
 
 gulp.task('serveprod', function() {
